@@ -32,8 +32,8 @@ body{width: 100dvw; background-color: #F2F8F8; overflow-x: hidden; position: rel
             nav{display: none;}
             .mobileNav {display: block; height: 4rem; z-index: 100; position: absolute; right: 0; top: 0;}
             .hamburger {font-size: 28px; color: #F7F5F2; cursor: pointer;  position: absolute; right: 1.5rem; top: 0.8rem; z-index: 101;}
-            .mobileMenu {transform: scaleX(0); transform-origin: right top; background-color: #333; display: flex; flex-direction: column; width: 20dvh; height: 100dvh; position: absolute; top: 0; right: 0; transition: all 0.3s linear;}
-            .mobileMenu.open{transform: scaleX(1);}
+            .mobileMenu {transform: translateX(100%); transform-origin: right top; background-color: #333; display: flex; flex-direction: column; width: 20dvh; height: 100dvh; position: absolute; top: 0; right: 0; transition: all 0.3s linear;}
+            .mobileMenu.open{transform: translateX(0);}
             .mobileMenu>a {padding: 10px 20px; font-weight: bold; margin: 20px 0; color: #F2F8F8; border-bottom: 1px solid #F2F8F8; width: 50%;}
         }
 
@@ -54,7 +54,7 @@ body{width: 100dvw; background-color: #F2F8F8; overflow-x: hidden; position: rel
         }
 
     /* 여기부터 섹션03_메인페이지 포토-------------------- */
-    .container03{width: 80%; height: 280vh; background-color: white; position: relative;}
+    .container03{width: 80%; height: 280vh; margin-bottom: 5rem; background-color: white; position: relative;}
     .mainImg:hover [alt]{transform: scale(1.2)}
     .mainImg{position: absolute; width: 31.5%; filter: brightness(0.4); transition: all 0.2s linear; overflow: hidden;}
     .mainImg:hover{cursor: pointer; transform: scale(1.05); filter: brightness(1);}
@@ -78,7 +78,7 @@ body{width: 100dvw; background-color: #F2F8F8; overflow-x: hidden; position: rel
 
         /*모바일*/
         @media(max-width:480px){
-            .container03{width: 90%; height: 70vh; }
+            .container03{width: 90%; height: 70vh;}
         }
 
 /***********PAGE02-about*/
